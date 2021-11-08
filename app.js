@@ -9,7 +9,7 @@ const numberofJokes=document.getElementById("number");
 
 const xhr=new XMLHttpRequest();
 
-xhr.open('GET',`http://api.icndb.com/jokes/random/${numberofJokes.value}`,true);
+xhr.open('GET',`//api.icndb.com/jokes/random/${numberofJokes.value}`,true);
 
 xhr.onload = function()
 { 
