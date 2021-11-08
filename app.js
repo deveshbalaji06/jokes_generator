@@ -5,7 +5,7 @@ function getjokes(e)
 {
 
 const numberofJokes=document.getElementById("number");
-console.log(numberofJokes.value);
+//console.log(numberofJokes.value);
 
 const xhr=new XMLHttpRequest();
 
@@ -18,11 +18,15 @@ xhr.onload = function()
        const response=JSON.parse(this.responseText);
       let output = ' ';
 
+    console.log(response)
+  
+      var count=0;
       
      if(response.type==='success')
      {
          response.value.forEach(function(jokes) {
-            output+=`<li> ${jokes.joke}</li>`
+            count++;
+            output+=`<li>${count + ":" } ${jokes.joke}</li>`
          });
         
      }
@@ -34,7 +38,6 @@ xhr.onload = function()
 
     
          document.querySelector('.jokes').innerHTML=output;
-       console.log(response);
    }
 
 

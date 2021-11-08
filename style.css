@@ -1,0 +1,25 @@
+body{
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+
+.container{
+    
+}
+
+ul{
+ color: black;
+}
+
+ul li{
+    border-color: white !important;
+    border: solid;
+    padding: 50px 25px;
+    border-radius: 10px;
+
+    float: left;
+    width: 25%;
+    height:20vh;
+    margin: 5px 7px;
+    list-style-type: none;
+}
